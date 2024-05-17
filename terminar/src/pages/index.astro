@@ -1,0 +1,13 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Bloque from '../components/vue/Bloque.vue';
+---
+
+<Layout title="Welcome to Astro.">
+	<div class="p-4 flex justify-center items-center">
+		<Bloque client:load>
+		</Bloque>
+		<Bloque client:load class="mx-4">
+		</Bloque>
+	</div>
+</Layout>
