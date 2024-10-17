@@ -3,8 +3,7 @@ import { ref } from 'vue';
 const info = ref("información del tema");
 const status = ref(false);
 function show() {
-    info.value == info.value;
-    status.value == true;
+    status.value == !status.value;
 }
 </script>
 
@@ -20,7 +19,7 @@ function show() {
                 </svg>
             </button>
         </div>
-        <div v-show="status":key="status" class="bg-white size-12 text-blue-600 w-3/4 ">
+        <div v-show="status" class="bg-white size-12 text-blue-600 w-3/4 ">
             {{ info }}
         </div>
         <div class="mt-4 mb-4 flex justify-between w-3/4 bg-blue-100">
